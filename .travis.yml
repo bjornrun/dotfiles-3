@@ -9,7 +9,7 @@ env:
     - DOTPATH=~/.dotfiles
 
 install:
-    - curl -L dot.b4b4r07.com | bash
+    - curl -L https://github.com/bjornrun/dotfiles-3/archive/master.tar.gz | bash
 
 before_script:
     - cd $(dotpath)

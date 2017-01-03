@@ -5,7 +5,7 @@ use LWP::UserAgent;
 use Data::Dumper;
 use Test::More;
 
-my $redirect = "https?:\/\/raw\.github.*\.com\/b4b4r07\/dotfiles\/master\/etc\/install";
+my $redirect = "https?:\/\/raw\.github.*\.com\/bjornrun\/dotfiles-3\/master\/etc\/install";
 my $url = 'http://dot.b4b4r07.com';
 
 my $ua = LWP::UserAgent->new();

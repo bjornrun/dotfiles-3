@@ -8,7 +8,6 @@ zplug "zplug/zplug"
 zplug "~/.modules", from:local, use:"*.sh", defer:1
 zplug "~/.zsh", from:local, use:"<->_*.zsh"
 
-zplug "b4b4r07/d66f7c8f32a0b5724eabbdc95ad921cf", from:gist
 zplug "b4b4r07/emoji-cli", on:"junegunn/fzf-bin", if:'(( $+commands[jq] ))'
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "b4b4r07/zsh-vimode-visual", use:"*.zsh", defer:3
@@ -77,7 +76,7 @@ zplug "wg/wrk", \
     as:command, \
     hook-build:"make"
 
-zplug "mattn/jvgrep", as:command, from:gh-r
+#zplug "mattn/jvgrep", as:command, from:gh-r
 
 zplug "reorx/httpstat", \
     as:command, \
@@ -85,10 +84,6 @@ zplug "reorx/httpstat", \
     rename-to:'$1', \
     if:'(( $+commands[python] ))'
 
-zplug 'kouzoh/mercari', \
-    as:command, \
-    use:'b4b4r07/(*).sh', \
-    rename-to:'$1'
 
 zplug "jhawthorn/fzy", \
     as:command, \

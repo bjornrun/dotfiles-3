@@ -4,7 +4,7 @@ require 'net/http'
 require 'uri'
 require 'json'
 require 'pp'
- 
+
 class ShortURL
   def self.expand(short_url)
     # http://longurl.org/api
@@ -28,9 +28,9 @@ class ShortURL
     end
   end
 end
+
  
- 
-redirect = "https://raw.githubusercontent.com/b4b4r07/dotfiles/master/etc/install".split("/")
-shorten = ShortURL.expand('http://dot.b4b4r07.com').split("/")
+redirect = "https://raw.githubusercontent.com/bjornrun/dotfiles-3/master/etc/install".split("/")
+shorten = ShortURL.expand('http://dot.bjornrun.com').split("/")
 
 exit(1) unless redirect[3..-1].join("/") == shorten[3..-1].join("/")
